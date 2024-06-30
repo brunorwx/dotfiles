@@ -13,7 +13,7 @@
   "workbench.activityBar.location": "top",
   "go.toolsManagement.autoUpdate": true,
   "material-icon-theme.folders.theme": "classic",
-  "editor.fontFamily": "'Monaspace Neon', monospace",
+  "editor.fontFamily": "'Monaspace Argon', monospace",
   "editor.fontWeight": "200",
   "terminal.integrated.fontWeight": "200",
   "terminal.integrated.fontSize": 13,
