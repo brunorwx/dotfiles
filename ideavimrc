@@ -7,7 +7,7 @@
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
-set scrolloff=5
+set scrolloff=10
 
 " Do incremental searching.
 set incsearch
@@ -33,27 +33,28 @@ Plug 'tpope/vim-commentary'
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
 let mapleader = " "
-set which-key
 set nerdtree
 set easymotion
 set notimeout
+set ignorecase
+set smartcase
+set hlsearch
 " Open NERDTree (use q to exit)
 nmap <leader>e :NERDTreeToggle<CR>
-map <leader>wv <Action>(SplitVertically)
-map <leader>wu <Action>(Unsplit)
+map <leader>v <Action>(SplitVertically)
 nmap gh <S-K>
-nmap <A-F12> <leader>t
-nmap <leader>gu <Action>(ShowUsages)
-nmap <leader>gt <Action>(GotoTest)
-map <leader>gs <Action>(ActivateVersionControlToolWindow)
+nmap gu <Action>(ShowUsages)
+nmap gi <Action>(GotoImplementation)
+nmap gt <Action>(GotoTest)
 map <leader>q <action>(CloseContent)
 " Tab navigation
 nnoremap <S-l> :tabnext<CR>
 nnoremap <S-h> :tabprev<CR>
 " Pane navigation
-nnoremap <A-h> <C-w>h
-nnoremap <A-l> <C-w>l
-nnoremap <A-k> <C-w>k
-nnoremap <A-j> <C-w>j
-nmap <Leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>h <C-w>h
+nnoremap <leader>l <C-w>l
+" Move lines up and down in visual mode using K and J
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 
