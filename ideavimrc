@@ -56,5 +56,6 @@ nnoremap <leader>l <C-w>l
 " Move lines up and down in visual mode using K and J
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+nmap <ESC> :nohlsearch<CR>
 
 
