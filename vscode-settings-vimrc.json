@@ -1,42 +1,25 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "workbench.layoutControl.enabled": false,
-  "git.enableSmartCommit": true,
-  "explorer.confirmDragAndDrop": false,
-  "editor.minimap.size": "fit",
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.maxColumn": 60,
-  "workbench.startupEditor": "none",
-  "editor.minimap.autohide": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.activityBar.location": "top",
-  "go.toolsManagement.autoUpdate": true,
-  "material-icon-theme.folders.theme": "classic",
-  "editor.fontFamily": "'Monaspace Argon', monospace",
-  "workbench.colorTheme": "Nord",
+  "git.openRepositoryInParentFolders": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.ignoreRebaseWarning": true,
+  "vim.useCtrlKeys": true,
+  "vim.easymotion": true,
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Esc>"],
+      "commands": [":nohl"]
+    },
     // NAVIGATION
     // switch b/w buffers
-    { 
-      "before": ["<S-h>"], 
-      "commands": [":bprevious"] 
-    },
-    { 
-      "before": ["<S-l>"], 
-      "commands": [":bnext"] 
-    },
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
     // splits
-    { 
-      "before": ["leader", "v"], 
-      "commands": [":vsplit"] 
-    },
-    { 
-      "before": ["leader", "s"], 
-      "commands": [":split"] 
-    },
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+
     // panes
     {
       "before": ["leader", "h"],
@@ -55,48 +38,75 @@
       "commands": ["workbench.action.focusRightGroup"]
     },
     // NICE TO HAVE
-    { 
-      "before": ["leader", "w"], 
-      "commands": [":w!"] 
-    },
-    { 
-      "before": ["leader", "q"], 
-      "commands": [":q!"] 
-    },
-    { 
-      "before": ["leader", "x"], 
-      "commands": [":x!"] 
-    },
-    { 
-      "before": [ "c", "a"], 
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["c", "a"],
       "commands": ["editor.action.quickFix"]
     },
-    { 
-      "before": ["leader", "f"], 
-      "commands": ["workbench.action.quickOpen"] 
-    },
-    { 
-      "before": ["g", "h"], 
-      "commands": ["editor.action.showDefinitionPreviewHover"] 
-    }
-  ], 
-  "vim.visualModeKeyBindings": [
-    // Stay in visual mode while indenting
-    { 
-      "before": ["<"], 
-      "commands": ["editor.action.outdentLines"] 
-    },
-    { "before": [">"], 
-      "commands": ["editor.action.indentLines"] 
-    },
-    // Move selected lines while staying in visual mode
-    { 
-      "before": ["J"], 
-      "commands": ["editor.action.moveLinesDownAction"] 
-    },
-    { 
-      "before": ["K"], 
-      "commands": ["editor.action.moveLinesUpAction"] 
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
     }
   ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
+  ],
+  "workbench.activityBar.location": "top",
+  "workbench.tree.enableStickyScroll": false,
+  "git.enableSmartCommit": true,
+  "window.titleBarStyle": "custom",
+  "workbench.iconTheme": "material-icon-theme",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "material-icon-theme.folders.theme": "classic",
+  "workbench.layoutControl.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "window.customTitleBarVisibility": "windowed",
+  "editor.showFoldingControls": "never",
+  "editor.minimap.enabled": false,
+  "workbench.settings.applyToAllProfiles": [
+    "editor.fontFamily"
+  ],
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showClasses": false,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showConstructors": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showEnums": false,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showFunctions": false,
+  "breadcrumbs.showInterfaces": false,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showMethods": false,
+  "breadcrumbs.showNull": false,
+  "breadcrumbs.showObjects": false,
+  "breadcrumbs.showOperators": false,
+  "breadcrumbs.showStrings": false,
+  "breadcrumbs.showStructs": false,
+  "breadcrumbs.showProperties": false,
+  "breadcrumbs.showPackages": false,
+  "breadcrumbs.showTypeParameters": false,
+  "breadcrumbs.showVariables": false,
+  "breadcrumbs.showNamespaces": false,
+  "breadcrumbs.showModules": false,
+  "breadcrumbs.showNumbers": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showFiles": false,
+  "python.createEnvironment.trigger": "off",
+  "workbench.startupEditor": "none",
+  "terminal.integrated.suggest.enabled": true,
+  "editor.fontSize": 13,
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Consolas, 'Courier New', monospace",
+  "notebook.lineNumbers": "on",
+  "breadcrumbs.enabled": false,
+  "notebook.formatOnSave.enabled": true
 }
