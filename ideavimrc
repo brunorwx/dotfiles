@@ -29,7 +29,7 @@ Plug 'tpope/vim-commentary'
 
 "" Map <leader>d to start debug
 "map <leader>d <Action>(Debug)
-
+set clipboard=unnamed
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
 let mapleader = " "
