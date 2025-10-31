@@ -108,5 +108,7 @@
   "editor.fontFamily": "JetBrains Mono, Fira Code, Consolas, 'Courier New', monospace",
   "notebook.lineNumbers": "on",
   "breadcrumbs.enabled": false,
-  "notebook.formatOnSave.enabled": true
+  "notebook.formatOnSave.enabled": true,
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.preferredDarkColorTheme": "Dark"
 }
