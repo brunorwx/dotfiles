@@ -109,6 +109,13 @@
   "notebook.lineNumbers": "on",
   "breadcrumbs.enabled": false,
   "notebook.formatOnSave.enabled": true,
-  "workbench.colorTheme": "Default Dark Modern",
-  "workbench.preferredDarkColorTheme": "Dark"
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorCustomizations": {
+    "editor.background": "#1e1e1e",
+    "sideBar.background": "#1e1e1e",
+    "activityBar.background": "#1e1e1e",
+    "panel.background": "#1e1e1e",
+    "statusBar.background": "#1e1e1e",
+    "titleBar.activeBackground": "#1e1e1e"
+  },
 }
