@@ -1,80 +1,192 @@
 {
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "git.openRepositoryInParentFolders": "never",
-  "security.workspace.trust.untrustedFiles": "open",
-  "git.ignoreRebaseWarning": true,
   "vim.useCtrlKeys": true,
   "vim.easymotion": true,
   "vim.leader": "<Space>",
+  "vim.scrolloff": 25,
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<Esc>"],
-      "commands": [":nohl"]
+      "before": [
+        "<Esc>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     // NAVIGATION
     // switch b/w buffers
-    { "before": ["<S-h>"], "commands": [":bprevious"] },
-    { "before": ["<S-l>"], "commands": [":bnext"] },
-
+    {
+      "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        ":bprevious"
+      ]
+    },
+    {
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        ":bnext"
+      ]
+    },
     // splits
-    { "before": ["leader", "v"], "commands": [":vsplit"] },
-
+    {
+      "before": [
+        "leader",
+        "v"
+      ],
+      "commands": [
+        ":vsplit"
+      ]
+    },
     // panes
     {
-      "before": ["leader", "h"],
-      "commands": ["workbench.action.focusLeftGroup"]
+      "before": [
+        "leader",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
     },
     {
-      "before": ["leader", "j"],
-      "commands": ["workbench.action.focusBelowGroup"]
+      "before": [
+        "leader",
+        "j"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
     },
     {
-      "before": ["leader", "k"],
-      "commands": ["workbench.action.focusAboveGroup"]
+      "before": [
+        "leader",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
     },
     {
-      "before": ["leader", "l"],
-      "commands": ["workbench.action.focusRightGroup"]
+      "before": [
+        "leader",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
     },
     // NICE TO HAVE
-    { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
     {
-      "before": ["c", "a"],
-      "commands": ["editor.action.quickFix"]
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        ":w!"
+      ]
     },
-    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
-    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
     {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
+      "before": [
+        "leader",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "x"
+      ],
+      "commands": [
+        ":x!"
+      ]
+    },
+    {
+      "before": [
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "p"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "h"
+      ],
+      "commands": [
+        "editor.action.showDefinitionPreviewHover"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
-    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
     // Move selected lines while staying in visual mode
-    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    }
   ],
-  "workbench.activityBar.location": "top",
   "workbench.tree.enableStickyScroll": false,
   "git.enableSmartCommit": true,
   "window.titleBarStyle": "custom",
-  "workbench.iconTheme": "material-icon-theme",
-  "github.copilot.editor.enableAutoCompletions": true,
-  "material-icon-theme.folders.theme": "classic",
-  "workbench.layoutControl.enabled": false,
   "editor.stickyScroll.enabled": false,
   "window.customTitleBarVisibility": "windowed",
-  "editor.showFoldingControls": "never",
   "editor.minimap.enabled": false,
-  "workbench.settings.applyToAllProfiles": [
-    "editor.fontFamily"
-  ],
   "breadcrumbs.showArrays": false,
   "breadcrumbs.showBooleans": false,
   "breadcrumbs.showClasses": false,
@@ -101,11 +213,36 @@
   "breadcrumbs.showNumbers": false,
   "breadcrumbs.showFields": false,
   "breadcrumbs.showFiles": false,
-  "python.createEnvironment.trigger": "off",
   "workbench.startupEditor": "none",
   "terminal.integrated.suggest.enabled": true,
-  "editor.fontFamily": "Consolas, 'Courier New', monospace",
-  "notebook.lineNumbers": "on",
   "breadcrumbs.enabled": false,
   "notebook.formatOnSave.enabled": true,
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "extensions.ignoreRecommendations": true,
+  "workbench.activityBar.location": "top",
+  "git.autofetch": true,
+  "workbench.navigationControl.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "editor.cursorSurroundingLines": 25,
+  "workbench.editor.empty.hint": "hidden",
+  "python.createEnvironment.trigger": "off",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "workbench.layoutControl.enabled": false,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "material-icon-theme.activeIconPack": "none",
+  "editor.bracketPairColorization.enabled": false,
+  "explorer.compactFolders": false,
+  "editor.formatOnSave": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "editor.fontSize": 16,
+  "notebook.lineNumbers": "on",
+  "editor.fontFamily": "Cascadia Code, Menlo Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "300"
 }
