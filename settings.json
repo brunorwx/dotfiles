@@ -236,7 +236,8 @@
   "workbench.activityBar.location": "top",
   "workbench.colorCustomizations": {
     "editor.background": "#191a1b",
-    "editorGutter.background": "#191a1b"
+    "editorGutter.background": "#191a1b",
+    "breadcrumb.background": "#191a1b",
   },
   "workbench.colorTheme": "VS Code Dark",
   "workbench.editor.empty.hint": "hidden",
