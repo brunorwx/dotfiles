@@ -1,0 +1,114 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "zoomed_padding": true,
+  "preview_tabs": {
+    "enable_preview_from_file_finder": true,
+  },
+  "tabs": {
+    "show_diagnostics": "all",
+  },
+  "tab_bar": {
+    "show_tab_bar_buttons": false,
+    "show_nav_history_buttons": false,
+    "show": true,
+  },
+  "title_bar": {
+    "show_onboarding_banner": true,
+    "show_branch_name": true,
+  },
+  "status_bar": {
+    "active_language_button": true,
+  },
+  "code_lens": "off",
+  "scrollbar": {
+    "selected_symbol": true,
+  },
+  "inline_code_actions": true,
+  "gutter": {
+    "bookmarks": true,
+    "folds": false,
+    "runnables": true,
+  },
+  "which_key": {
+    "enabled": false,
+  },
+  "inlay_hints": {
+    "show_background": false,
+  },
+  "colorize_brackets": false,
+  "format_on_save": "modifications_if_available",
+  "vim": {
+    "use_smartcase_find": true,
+  },
+  "toolbar": {
+    "code_actions": false,
+    "agent_review": true,
+    "selections_menu": true,
+    "quick_actions": false,
+    "breadcrumbs": false,
+  },
+  "agent_ui_font_size": 15.0,
+  "agent_servers": {
+    "opencode": {
+      "default_config_options": {
+        "model": "ollama/qwen2.5-coder:3b",
+      },
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "icon_theme": {
+    "mode": "light",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme",
+  },
+  "agent": {
+    "dock": "right",
+    "profiles": {
+      "test": {
+        "name": "test",
+        "tools": {},
+        "enable_all_context_servers": false,
+        "context_servers": {},
+      },
+    },
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-haiku-4.5",
+    },
+    "model_parameters": [],
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Carbonfox - blurred",
+  },
+}
