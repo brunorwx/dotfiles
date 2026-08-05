@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  "enable_language_server": true,
   "zoomed_padding": true,
   "preview_tabs": {
     "enable_preview_from_file_finder": true,
@@ -26,7 +32,7 @@
   "status_bar": {
     "active_language_button": true,
   },
-  "code_lens": "off",
+  "code_lens": "on",
   "scrollbar": {
     "selected_symbol": true,
   },
@@ -40,6 +46,7 @@
     "enabled": false,
   },
   "inlay_hints": {
+    "enabled": true,
     "show_background": false,
   },
   "colorize_brackets": false,
@@ -58,7 +65,7 @@
   "agent_servers": {
     "opencode": {
       "default_config_options": {
-        "model": "ollama/qwen2.5-coder:3b",
+        "model": "opencode/nemotron-3-ultra-free",
       },
       "type": "registry",
     },
