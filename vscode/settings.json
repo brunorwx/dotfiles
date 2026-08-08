@@ -27,9 +27,7 @@
   "breadcrumbs.showTypeParameters": false,
   "breadcrumbs.showVariables": false,
   "chat.viewSessions.orientation": "stacked",
-  "editor.bracketPairColorization.enabled": false,
   "editor.cursorSurroundingLines": 25,
-  "editor.fontSize": 15,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
@@ -233,19 +231,41 @@
   "window.customTitleBarVisibility": "windowed",
   "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
-  "workbench.activityBar.location": "top",
   "workbench.colorCustomizations": {
     "editor.background": "#191a1b",
     "editorGutter.background": "#191a1b",
     "breadcrumb.background": "#191a1b",
   },
-  "workbench.colorTheme": "VS Code Dark",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreviewFromCodeNavigation": true,
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.navigationControl.enabled": false,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "none",
-  "workbench.tree.enableStickyScroll": false
+  "workbench.tree.enableStickyScroll": false,
+  "chat.tools.terminal.autoApprove": {
+    "/^uv run main\\.py data/zone_map\\.csv data/journey_data\\.csv output\\.csv$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/^\\.venv/bin/python -m pytest tests/test_model\\.py -q$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/^\\.venv/bin/python -m pytest tests/test_api\\.py -q$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  },
+  "workbench.activityBar.compact": true,
+  "testing.resultsView.layout": "treeLeft",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontSize": 16,
+  "python.analysis.typeCheckingMode": "standard",
+  "workbench.experimental.modernUI": true,
+  "editor.foldingImportsByDefault": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "js/ts.inlayHints.variableTypes.enabled": true,
+  "js/ts.inlayHints.functionLikeReturnTypes.enabled": true
 }
